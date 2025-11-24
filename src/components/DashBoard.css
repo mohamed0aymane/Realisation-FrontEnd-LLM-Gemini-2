@@ -1,0 +1,124 @@
+/* ----- GLOBAL CONTAINER ----- */
+.dashboard-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ----- TITLES ----- */
+.dashboard-container h2 {
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ----- TEXTAREA ----- */
+.dashboard-container textarea {
+  width: 100%;
+  height: 160px;
+  padding: 18px;
+  border-radius: 15px;
+
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+
+  font-size: 17px;
+  resize: none;
+
+  box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.dashboard-container textarea::placeholder {
+  color: #eee;
+  opacity: 0.7;
+}
+
+.dashboard-container textarea:focus {
+  background: rgba(255, 255, 255, 0.27);
+  transform: scale(1.01);
+}
+
+/* ----- BUTTON ----- */
+.dashboard-container button {
+  margin-top: 20px;
+  padding: 14px 40px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 15px rgba(39, 124, 255, 0.35);
+}
+
+.dashboard-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(39, 124, 255, 0.55);
+}
+
+.dashboard-container button:active {
+  transform: translateY(0);
+}
+
+/* ----- RESULT SECTION ----- */
+.dashboard-container h3 {
+  margin-top: 35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dashboard-container p {
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: #f1f1f1;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  min-height: 60px;
+}
+
+/* ----- FADE IN ANIMATION ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- BACKGROUND GLOBAL (optional) ----- */
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
